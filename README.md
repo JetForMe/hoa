@@ -1,6 +1,10 @@
 # HOA
 A [Baratine](http://baratine.io) web application to help manage our HOA, and teach me how to use Baratine.
 
+# License
+
+You may not use this code for any competitive or commercial app. You may use it to see how to accomplish certain things (or not!) in a general way.
+
 # To Do
 
 1. User model
