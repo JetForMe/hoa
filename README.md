@@ -1,5 +1,5 @@
-# hoa
-A web application to help manage our HOA
+# HOA
+A [Baratine](http://baratine.io) web application to help manage our HOA.
 
 # To Do
 
