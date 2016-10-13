@@ -19,6 +19,10 @@ HOASession
 	registerUser(@Body UserRegistrationForm inUser,
 					Result<UserPublic> inResult);
 	
+	/**
+		DTO used when submitting a registration request.
+	*/
+	
 	static
 	class
 	UserRegistrationForm
@@ -29,6 +33,12 @@ HOASession
 		String			last;
 		String			email;
 	}
+	
+	/**
+		DTO used to return data to the REST client, when
+		that client is not authorized to see the returned
+		user’s information.
+	*/
 	
 	static
 	class
@@ -55,6 +65,12 @@ HOASession
 			return up;
 		}
 	}
+	
+	/**
+		DTO builds upon UserPublic to add additional
+		fields visible to authorized users (admins or
+		the owner).
+	*/
 	
 	static
 	class

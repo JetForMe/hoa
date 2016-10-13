@@ -41,15 +41,15 @@ UserImpl implements User
 		//	TODO: throw exception on login collision
 		
 		login = inForm.login;
-		mFirst = inForm.first;
-		mLast = inForm.last;
-		mEmail = inForm.email;
-		mCreateDate = new Date();
+		first = inForm.first;
+		last = inForm.last;
+		email = inForm.email;
+		createDate = new Date();
 		
 		String bcp = BCrypt.hashpw(inForm.password, BCrypt.gensalt(12));	//	TODO: configurable parameter
-		mEncryptedPassword = bcp;
+		encryptedPassword = bcp;
 		
-		ioResult.ok(mId);
+		ioResult.ok(id);
 	}
 	
 	@Override
@@ -60,22 +60,22 @@ UserImpl implements User
 		sLogger.info("UserImpl.get() called");
 		
 		Data user = new Data();
-		user.id = mId.toString();
-		user.first = mFirst;
-		user.last = mLast;
+		user.id = id.toString();
+		user.first = first;
+		user.last = last;
 		
 		ioResult.ok(user);
 	}
 	
 	@Id
-	private IdAsset 			mId;
-	private	String				mFirst;
-	private	String				mLast;
-	private	String				mEmail;
+	private IdAsset 			id;
+	private	String				first;
+	private	String				last;
+	private	String				email;
 	private	String				login;
-	private	String				mEncryptedPassword;
+	private	String				encryptedPassword;
 	
-	private	Date				mCreateDate;
+	private	Date				createDate;
 
 	private static final Logger		sLogger		=	Logger.getLogger(UserImpl.class.getName());
 }
