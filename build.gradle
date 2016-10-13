@@ -28,8 +28,14 @@ dependencies
 	testCompile group: 'junit',				name: 'junit',				version:'3.8.1'
 }
 
+compileJava
+{
+	options.compilerArgs << "-Xlint:all"
+}
+
 mainClassName = 'com.latencyzero.hoa.App'
 
-run {
+run
+{
 	args "--conf", "baratine.yml"
 }

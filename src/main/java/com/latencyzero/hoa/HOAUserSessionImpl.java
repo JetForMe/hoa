@@ -34,12 +34,5 @@ HOAUserSessionImpl
 		sLogger.info("HOAUserSessionImpl.init()");
 	}
 	
-	public
-	void
-	registerUser(@Body UserRegistrationForm inUser,
-					Result<UserPublic> inResult)
-	{
-	}
-	
 	private static final Logger		sLogger		=	Logger.getLogger(HOAUserSessionImpl.class.getName());
 }

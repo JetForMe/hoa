@@ -24,7 +24,7 @@ AbstractHOASession implements HOASession
 	void
 	init()
 	{
-		sLogger.info("AbstractHOASession.init()");
+		sLogger.info("AbstractHOASession.init(). ID: " + mID);
 	}
 	
 	@Post("/register")
@@ -33,7 +33,7 @@ AbstractHOASession implements HOASession
 	registerUser(@Body UserRegistrationForm inUser,
 					Result<UserPublic> ioResult)
 	{
-		sLogger.info("AbstractHOASession.registerUser()");
+		sLogger.info("AbstractHOASession.registerUser(). ID: " + mID);
 		
 		mUsers.create(inUser,
 						ioResult.then((id, r) ->
@@ -53,11 +53,11 @@ AbstractHOASession implements HOASession
 	String										mID;
 	
 	@Inject
-	protected	Services						mManager;
+	protected Services							mManager;
 	
 	@Inject
 	@Service("/User")
-	private		UserAbstractVault<User>			mUsers;
+	private UserAbstractVault<User>				mUsers;
 
 
 

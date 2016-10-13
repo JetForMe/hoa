@@ -6,6 +6,7 @@ import java.util.Map;
 import java.util.HashMap;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import java.util.logging.SimpleFormatter;
 
 import javax.inject.Inject;
 
@@ -35,6 +36,37 @@ public
 class
 App
 {
+	public
+	static
+	void
+	main(String[] inArgs)
+		throws
+			Exception
+	{
+		System.out.println("Args: " + Arrays.toString(inArgs));
+		
+		Level level = Level.FINEST;
+		
+		Logger.getLogger("com.caucho").setLevel(level);
+		Logger.getLogger("core").setLevel(level);
+
+		Logger logger = Logger.getLogger("com.latencyzero");
+		logger.setLevel(level);
+// 		SimpleFormatter sf = new SimpleFormatter();
+// 		sf.format = 
+// 		logger.getHandlers().forEach(h -> h.setFormatter(new SimpleFormatter("")));
+		
+		sLogger.info("Starting server");
+		
+		Web.include(HOAUserSessionImpl.class);
+		Web.include(UserVault.class);
+		
+		Web.start(inArgs);
+	}
+	
+
+
+
 // 	@Get("/users/{id}/")
 // 	public
 // 	void
@@ -169,29 +201,6 @@ App
 // 	{
 // 		int				bCryptLogRounds;
 // 	}
-	
-	public
-	static
-	void
-	main(String[] inArgs)
-		throws
-			Exception
-	{
-		System.out.println("Args: " + Arrays.toString(inArgs));
-		
-		Level level = Level.FINEST;
-
-		Logger.getLogger("com.caucho").setLevel(level);
-		Logger.getLogger("com.latencyzero").setLevel(level);
-		Logger.getLogger("core").setLevel(level);
-		
-		sLogger.info("Starting server");
-		
-		Web.include(HOAUserSessionImpl.class);
-		Web.include(UserVault.class);
-		
-		Web.start(inArgs);
-	}
 	
 	private static final Logger		sLogger		=	Logger.getLogger(App.class.getName());
 }
