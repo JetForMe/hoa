@@ -45,7 +45,7 @@ App
 	{
 		System.out.println("Args: " + Arrays.toString(inArgs));
 		
-		Level level = Level.FINEST;
+		Level level = Level.INFO;
 		
 		Logger.getLogger("com.caucho").setLevel(level);
 		Logger.getLogger("core").setLevel(level);
