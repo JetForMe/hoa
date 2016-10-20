@@ -17,6 +17,7 @@ import io.baratine.web.Get;
 import io.baratine.web.Path;
 import io.baratine.web.Post;
 
+import org.mindrot.jbcrypt.BCrypt;
 
 
 public
@@ -31,6 +32,7 @@ AbstractHOASession implements HOASession
 		sLogger.info("AbstractHOASession.init(). ID: " + mID);
 	}
 	
+	@Override
 	@Post("/register")
 	public
 	void
@@ -38,6 +40,14 @@ AbstractHOASession implements HOASession
 					Result<UserPublic> ioResult)
 	{
 		sLogger.info("AbstractHOASession.registerUser(). ID: " + mID);
+		
+		if (mLogins.contains(inUser.login))
+		{
+			//	Set response 409, send different JSON
+			//	than UserPublic
+			ioResult.fail();
+			return;
+		}
 		
 		mUsers.create(inUser,
 						ioResult.then((id, r) ->
@@ -51,6 +61,7 @@ AbstractHOASession implements HOASession
 								//	Get the user that was just created…
 								
 								User user = getUserService(id.toString());
+								sLogger.info("Fetched user: " + user);
 								user.get(r.then(u ->
 									{
 										sLogger.info("Fetched user: " + u);
