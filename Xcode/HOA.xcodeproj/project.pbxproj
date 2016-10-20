@@ -1,0 +1,305 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXFileReference section */
+		C62BCFE31DB822B10047B03E /* AbstractHOASession.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = AbstractHOASession.java; sourceTree = "<group>"; };
+		C62BCFE41DB822B10047B03E /* App.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = App.java; sourceTree = "<group>"; };
+		C62BCFE51DB822B10047B03E /* HOASession.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = HOASession.java; sourceTree = "<group>"; };
+		C62BCFE61DB822B10047B03E /* HOAUserSession.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = HOAUserSession.java; sourceTree = "<group>"; };
+		C62BCFE71DB822B10047B03E /* HOAUserSessionImpl.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = HOAUserSessionImpl.java; sourceTree = "<group>"; };
+		C62BCFE81DB822B10047B03E /* User.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = User.java; sourceTree = "<group>"; };
+		C62BCFE91DB822B10047B03E /* UserAbstractVault.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = UserAbstractVault.java; sourceTree = "<group>"; };
+		C62BCFEA1DB822B10047B03E /* UserImpl.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = UserImpl.java; sourceTree = "<group>"; };
+		C62BCFEB1DB822B10047B03E /* UserVault.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = UserVault.java; sourceTree = "<group>"; };
+		C62BCFF11DB822B10047B03E /* AppTest.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = AppTest.java; sourceTree = "<group>"; };
+		C62BCFF21DB822B60047B03E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		C62BCFD61DB822930047B03E = {
+			isa = PBXGroup;
+			children = (
+				C62BCFF21DB822B60047B03E /* README.md */,
+				C62BCFDD1DB822B10047B03E /* src */,
+			);
+			sourceTree = "<group>";
+		};
+		C62BCFDD1DB822B10047B03E /* src */ = {
+			isa = PBXGroup;
+			children = (
+				C62BCFDE1DB822B10047B03E /* main */,
+				C62BCFEC1DB822B10047B03E /* test */,
+			);
+			name = src;
+			path = ../src;
+			sourceTree = "<group>";
+		};
+		C62BCFDE1DB822B10047B03E /* main */ = {
+			isa = PBXGroup;
+			children = (
+				C62BCFDF1DB822B10047B03E /* java */,
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
+		C62BCFDF1DB822B10047B03E /* java */ = {
+			isa = PBXGroup;
+			children = (
+				C62BCFE01DB822B10047B03E /* com */,
+			);
+			path = java;
+			sourceTree = "<group>";
+		};
+		C62BCFE01DB822B10047B03E /* com */ = {
+			isa = PBXGroup;
+			children = (
+				C62BCFE11DB822B10047B03E /* latencyzero */,
+			);
+			path = com;
+			sourceTree = "<group>";
+		};
+		C62BCFE11DB822B10047B03E /* latencyzero */ = {
+			isa = PBXGroup;
+			children = (
+				C62BCFE21DB822B10047B03E /* hoa */,
+			);
+			path = latencyzero;
+			sourceTree = "<group>";
+		};
+		C62BCFE21DB822B10047B03E /* hoa */ = {
+			isa = PBXGroup;
+			children = (
+				C62BCFE31DB822B10047B03E /* AbstractHOASession.java */,
+				C62BCFE41DB822B10047B03E /* App.java */,
+				C62BCFE51DB822B10047B03E /* HOASession.java */,
+				C62BCFE61DB822B10047B03E /* HOAUserSession.java */,
+				C62BCFE71DB822B10047B03E /* HOAUserSessionImpl.java */,
+				C62BCFE81DB822B10047B03E /* User.java */,
+				C62BCFEA1DB822B10047B03E /* UserImpl.java */,
+				C62BCFE91DB822B10047B03E /* UserAbstractVault.java */,
+				C62BCFEB1DB822B10047B03E /* UserVault.java */,
+			);
+			path = hoa;
+			sourceTree = "<group>";
+		};
+		C62BCFEC1DB822B10047B03E /* test */ = {
+			isa = PBXGroup;
+			children = (
+				C62BCFED1DB822B10047B03E /* java */,
+			);
+			path = test;
+			sourceTree = "<group>";
+		};
+		C62BCFED1DB822B10047B03E /* java */ = {
+			isa = PBXGroup;
+			children = (
+				C62BCFEE1DB822B10047B03E /* com */,
+			);
+			path = java;
+			sourceTree = "<group>";
+		};
+		C62BCFEE1DB822B10047B03E /* com */ = {
+			isa = PBXGroup;
+			children = (
+				C62BCFEF1DB822B10047B03E /* latencyzero */,
+			);
+			path = com;
+			sourceTree = "<group>";
+		};
+		C62BCFEF1DB822B10047B03E /* latencyzero */ = {
+			isa = PBXGroup;
+			children = (
+				C62BCFF01DB822B10047B03E /* hoa */,
+			);
+			path = latencyzero;
+			sourceTree = "<group>";
+		};
+		C62BCFF01DB822B10047B03E /* hoa */ = {
+			isa = PBXGroup;
+			children = (
+				C62BCFF11DB822B10047B03E /* AppTest.java */,
+			);
+			path = hoa;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		C62BCFF31DB823850047B03E /* HOA */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = compileJava;
+			buildConfigurationList = C62BCFF41DB823850047B03E /* Build configuration list for PBXLegacyTarget "HOA" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/local/bin/gradle;
+			buildWorkingDirectory = "$(SRCROOT)/..";
+			dependencies = (
+			);
+			name = HOA;
+			passBuildSettingsInEnvironment = 1;
+			productName = HOA;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXProject section */
+		C62BCFD71DB822930047B03E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				TargetAttributes = {
+					C62BCFF31DB823850047B03E = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = H6F2W964VK;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = C62BCFDA1DB822930047B03E /* Build configuration list for PBXProject "HOA" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C62BCFD61DB822930047B03E;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C62BCFF31DB823850047B03E /* HOA */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		C62BCFDB1DB822930047B03E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		C62BCFDC1DB822930047B03E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		C62BCFF51DB823850047B03E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUGGING_SYMBOLS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = H6F2W964VK;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C62BCFF61DB823850047B03E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = H6F2W964VK;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C62BCFDA1DB822930047B03E /* Build configuration list for PBXProject "HOA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C62BCFDB1DB822930047B03E /* Debug */,
+				C62BCFDC1DB822930047B03E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C62BCFF41DB823850047B03E /* Build configuration list for PBXLegacyTarget "HOA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C62BCFF51DB823850047B03E /* Debug */,
+				C62BCFF61DB823850047B03E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C62BCFD71DB822930047B03E /* Project object */;
+}
